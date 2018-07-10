@@ -1,0 +1,5 @@
+.card .card-action {border-top: 1px solid #CFF09E;}
+.card .card-title{font-weight: bold;}
+.card{background-color: #79BD9A;}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {color: #3B8686;}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {color: #CFF09E;}
