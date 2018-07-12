@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col s12">
+	<label>Name: <input #name /></label>
+	<label>Author: <input #author /></label>
+	<label>Publish year: <input #year /></label>
+	<label>Publisher: <input #editorial /></label>
+
+	<button class="btn waves-effect waves-light" (click)="add(name.value, author.value, year.value, editorial.value); goToList()">add</button>
+    </div>
+</div>

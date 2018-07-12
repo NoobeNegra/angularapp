@@ -1,5 +1,2 @@
-nav
-{
-    background-color: #3B8686;
-    padding: 3px;
-}
+nav{color: #fff;background-color: #3B8686;width: 100%; height: auto; overflow: hidden}
+.nav-wrapper{background-color: #3B8686};

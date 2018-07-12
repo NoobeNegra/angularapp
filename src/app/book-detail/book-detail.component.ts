@@ -16,16 +16,16 @@ export class BookDetailComponent implements OnInit {
     constructor(private route: ActivatedRoute, private bs: BookService, private location: Location) { }
 
     ngOnInit() {
-	this.getBook();
+	//this.getBook();
     }
 
-    getBook():void{
+    /*getBook():void{
 	const id = +this.route.snapshot.paramMap.get('id');
 	this.bs.getBook(id).subscribe(book => this.book = book);
     }
 
     goBack(): void {
 	this.location.back();
-    }
+    }*/
 
 }

@@ -17,6 +17,6 @@ export class DashboardComponent implements OnInit {
     }
 
     getListBooks(): void {
-	this.bookService.getAllBooks().subscribe(books => this.books = books.slice(1, 5));
+	this.bookService.getTopBooks().subscribe(books => this.books = books);
     }
 }
