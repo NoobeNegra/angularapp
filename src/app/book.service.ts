@@ -26,4 +26,8 @@ export class BookService {
     getAllBooks(limit:number, offset:number):Observable<Book[]>{
 	return this.http.post<Book[]>('http://localhost:8000/api/books/', {"offset":offset,"limit":limit});
     }
+
+    getBook(id:number):Observable<Book>{
+	return this.http.get<Book>('http://localhost:8000/api/get-book/'+id);
+    }
 }

@@ -11,21 +11,21 @@ import { BookService }  from '../book.service';
 })
 
 export class BookDetailComponent implements OnInit {
+    book: Book;
 
-    @Input() book: Book;
     constructor(private route: ActivatedRoute, private bs: BookService, private location: Location) { }
 
     ngOnInit() {
-	//this.getBook();
+	this.getBook();
     }
 
-    /*getBook():void{
+    getBook():void{
 	const id = +this.route.snapshot.paramMap.get('id');
 	this.bs.getBook(id).subscribe(book => this.book = book);
     }
 
     goBack(): void {
 	this.location.back();
-    }*/
+    }
 
 }

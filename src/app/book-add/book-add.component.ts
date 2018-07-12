@@ -20,6 +20,6 @@ export class BookAddComponent implements OnInit {
     }
 
     goToList():void{
-	this.location.go('/books').subscribe();
+	this.location.back();
     }
 }

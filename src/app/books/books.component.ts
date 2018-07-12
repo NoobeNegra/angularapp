@@ -16,7 +16,7 @@ export class BooksComponent implements OnInit {
 	this.getListBooks(10,0);
     }
 
-    getListBooks(limit:number; offset:number): void {
+    getListBooks(limit:number, offset:number): void {
 	this.bs.getAllBooks(limit,offset).subscribe(books => this.books = books);
     }
 }

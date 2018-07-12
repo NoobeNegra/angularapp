@@ -57,3 +57,12 @@ app.route('/api/books').post((req, res) => {
 	res.status(201).send(result);
     });
 });
+
+//Request a book by Id
+app.route('/api/get-book/:id').get((req, res)=>{
+    var sql = "SELECT * FROM books WHERE id= "+req.params['id'];
+    con.query(sql, function (err, result, fields) {
+	if (err) throw err;
+	res.status(201).send(result);
+    });
+});
